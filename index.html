@@ -7,13 +7,15 @@
   </head>
   <body>
 
- <!--Here is my header--> 
       <header>
          <h1>Hello HTML</h1>
+
+<!--site navigations-->         
+
          <nav>
             <ul>
                <li>
-                  <a href="#">Go there</a>
+                  <a href="#links">Go there</a>
                </li>
             </ul>
             <ol>
@@ -22,45 +24,53 @@
                </li>
             </ol>
          </nav>   
-      </header>
+      </header>    
 
-<!--Here is my main-->      
       <main>
-         <h2>I love HTML, CSS, JavaScript...</h2>
-            <p>Some information about <strong>HTML</strong>.<br> <em>Here</em> more about it</p>
 
-<!--Let's add a table-->            
+<!--links to outside sourses-->          
+
+         <h2 id="links">I love <a href="#" target="_blank">HTML</a>,
+            <a href="#" target="_blank">CSS</a> , <a href="#" target="_blank">JavaScript</a>...</h2>
+            <img src="#" alt="'XXX'">
+<!--Few other tags-->
+            <p>Some information about <strong>HTML</strong>.<br> <a href="#" target="_blank"> <em>Here</em></a> more about it</p>
+
+<!--Let's add a table-->    
+
       <table>
          <thead>
             <tr>
-               <td>Tag</td>
-               <td>Name</td>
-               <td>Description</td>
+               <th scope="col">Tag</td>
+               <th scope="col">Name</td>
+               <th scope="col">Description</td>
             </tr>
          </thead>
          <tbody>
             <tr>
-                <td>&lt;h1&gt; - &lt;h6&gt;</td>
+                <td class="tags">&lt;h1&gt; - &lt;h6&gt;</td>
                 <td>Heading Elements</td>
                 <td>HTML can use six different levels of heading elements.
                     The heading elements are ordered from the highest level  to the lowest level</td>
             </tr>
             <tr>
-                <td>&lt;!-- --&gt;</td>
+                <td class="tags">&lt;!-- --&gt;</td>
             </tr>
             <tr>
-                <td>&lt;li&gt;</td>
+                <td class="tags">&lt;li&gt;</td>
                 <td> List Item Element</td>
                 <td>list item element create list items</td>
             </tr>
         </tbody>
         <tfoot>
            <tr>
-              <td>Here are some summary</td>
+              <td colspan="3">Here are some summary</td>
            </tr>
         </tfoot>
-
-      </table>   
+      </table>  
+<!--Add a video and audio-->  
+      <video src="#" controls>Video not supported</video>
+      <audio src="#" controls></audio>
       </main>   
      
       
