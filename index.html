@@ -1,9 +1,15 @@
 <!doctype html>
 <html>
   <head>
+     <meta charset="UTF-8 (en-US)">
      <title>Hello World</title>
      <link rel="stylesheet" href="#css">
      <script src="#js"></script>
+     <style type="text/css">
+        body {
+           background-color: bisque;
+        }
+     </style>
   </head>
   <body>
 
@@ -32,31 +38,34 @@
 
          <h2 id="links">I love <a href="#" target="_blank">HTML</a>,
             <a href="#" target="_blank">CSS</a> , <a href="#" target="_blank">JavaScript</a>...</h2>
-            <img src="#" alt="'XXX'">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/83/e258e0532611e5a5072321239ff4d4/jhep-coursera-course4.png?auto=format%2Ccompress&dpr=1" alt="HTML,CSS,JS">
+            <style scoped>
+               img {
+                  height: 160px;
+                  width: 30%;
+               }
+            </style>
 <!--Few other tags-->
             <p>Some information about <strong>HTML</strong>.<br> <a href="#" target="_blank"> <em>Here</em></a> more about it</p>
 
 <!--Let's add a table-->    
 
-      <table>
+      <table border="1">
          <thead>
-            <tr>
+            <tr><!--first row-->
                <th scope="col">Tag</td>
                <th scope="col">Name</td>
                <th scope="col">Description</td>
             </tr>
          </thead>
          <tbody>
-            <tr>
+            <tr><!--second row-->
                 <td class="tags">&lt;h1&gt; - &lt;h6&gt;</td>
                 <td>Heading Elements</td>
                 <td>HTML can use six different levels of heading elements.
                     The heading elements are ordered from the highest level  to the lowest level</td>
             </tr>
-            <tr>
-                <td class="tags">&lt;!-- --&gt;</td>
-            </tr>
-            <tr>
+            <tr><!--third row-->
                 <td class="tags">&lt;li&gt;</td>
                 <td> List Item Element</td>
                 <td>list item element create list items</td>
@@ -71,7 +80,15 @@
 <!--Add a video and audio-->  
       <video src="#" controls>Video not supported</video>
       <audio src="#" controls></audio>
-      </main>   
+      <h4>To get more info please fill the form below</h4>
+      <form action="getform.php" method="get">
+         First name: <input type="text" name="first_name" /><br />
+          Last name: <input type="text" name="last_name" /><br />
+             E-mail: <input type="email" name="user_email" /><br />
+     <input type="submit" value="Submit" />
+     </form> 
+      </main> 
+  
      
       
   </body>
